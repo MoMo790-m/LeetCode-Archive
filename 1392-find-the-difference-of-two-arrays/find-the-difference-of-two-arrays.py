@@ -5,7 +5,7 @@ class Solution:
         set2 = set(nums2)
 
         res1 = list(set1 - set2)
-        res2  = list(set2-set1)
+        res2  = list(set2 - set1)
 
         res = [res1,res2]
 
