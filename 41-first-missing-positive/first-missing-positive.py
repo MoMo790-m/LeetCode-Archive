@@ -1,9 +1,8 @@
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
         num_set = set(nums)
-        smallest = 1
+        len_nums = len(nums)
 
-        while smallest in num_set:
-            smallest +=1
-
-        return smallest        
+        for num in range(1,len_nums + 2):
+            if num not in num_set:
+                return num
